@@ -21,7 +21,10 @@
         <nav>
             <ul class="nav-links">
                 <li><a href="#hero" class="active">Home</a></li>
-                <li><a href="#games">Game Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#games">Projects</a></li>
                 <li><a href="#tools">Tools</a></li>
                 <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -31,8 +34,11 @@
 
     <main class="main-content">
         <section id="hero" class="hero">
-            <div class="container fade-in">
-                <p class="pre-title" style="color: var(--accent-magenta); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">Hi, I am Zeynep</p>
+            <div class="container fade-in" style="display: flex; flex-direction: column; align-items: center;">
+                <div class="profile-photo" style="width: 150px; height: 150px; border-radius: 50%; border: 3px solid var(--accent-magenta); margin-bottom: 2rem; overflow: hidden; box-shadow: var(--glow-pink);">
+                    <img src="assets/images/zey.jpg" alt="Zeynep Karadağ" onerror="this.src='https://placehold.co/150x150/151632/ff00ff?text=Zeynep'" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <p class="pre-title" style="color: var(--accent-magenta); font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 1rem;">Hi, I am Zeynep Karadağ</p>
                 <h1>Crafting <span class="highlight" style="display: initial; background: linear-gradient(135deg, var(--accent-magenta), var(--accent-yellow)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">Immersive</span> Experiences</h1>
                 <p>3rd Year Software Engineering Student & Aspiring Game Developer dedicated to building interactive worlds and innovative tools.</p>
                 <div style="margin-top: 2rem;">
@@ -161,6 +167,16 @@
                             Beyond coding, I have a deep interest in digital illustration and UI/UX design, which allows me to approach problems from both a logical and aesthetic perspective. I am particularly interested in how custom data structures and optimized algorithms can be leveraged to create more dynamic and engaging player experiences.
                         </p>
                         
+                        <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-pink);">Interests & Hobbies</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            Oyun geliştirme, dijital illüstrasyon, piksel sanatı ve kullanıcı deneyimi tasarımı ile ilgileniyorum. Karmaşık sistemleri basit ve estetik çözümlere dönüştürmeyi seviyorum.
+                        </p>
+
+                        <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-yellow);">Goals</h3>
+                        <p style="color: var(--text-secondary); margin-bottom: 2rem;">
+                            Yazılım mühendisliği prensiplerini oyun mekanikleriyle birleştirerek oyuncuları içine çeken dünyalar yaratmayı ve yenilikçi araçlar geliştirmeyi hedefliyorum.
+                        </p>
+                        
                         <h3 style="font-size: 1.3rem; margin-top: 1rem; margin-bottom: 1.5rem; color: var(--accent-blue);">Professional Experience</h3>
                         <div class="experience-item" style="border-left: 2px solid var(--accent-magenta); padding-left: 1.5rem; margin-bottom: 2rem;">
                             <h4 style="font-size: 1.1rem; margin-bottom: 0.2rem;">Mobile Test Automation Intern – Virgosol</h4>
@@ -171,13 +187,44 @@
                                 <li>Contributed to the software quality assurance (SQA) process by identifying, documenting and reporting bugs.</li>
                             </ul>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                        <div class="skills-mini" style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-blue);">Unity & C#</span>
-                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-magenta);">Data Structures</span>
-                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-pink); shadow: var(--glow-pink);">Aseprite & Pixel Art</span>
-                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid var(--accent-yellow);">Frontend Development</span>
-                            <span style="background: rgba(255,255,255,0.05); padding: 0.5rem 1rem; border-radius: 50px; font-size: 0.9rem; border: 1px solid #2ECC71;">Mobile Test Automation (Appium/BDD)</span>
+        <section id="education" class="education">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="card blue no-hover" style="padding: 3rem;">
+                    <div class="education-item" style="border-left: 2px solid var(--accent-blue); padding-left: 1.5rem;">
+                        <h3 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Ankara Üniversitesi</h3>
+                        <p class="highlight" style="font-weight: 600; font-size: 1.1rem; color: var(--accent-blue);">Yazılım Mühendisliği</p>
+                        <p style="color: var(--text-secondary);">3. Sınıf (2023 - Günümüz)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2 class="section-title">Skills</h2>
+                <div class="grid">
+                    <div class="card pink no-hover">
+                        <div class="card-content">
+                            <h3 style="color: var(--accent-magenta);"><i class="fas fa-code" style="margin-right: 10px;"></i> Technical Beceriler</h3>
+                            <p>Unity, C#, HTML, CSS, JavaScript, Python, SQL</p>
+                        </div>
+                    </div>
+                    <div class="card blue no-hover">
+                        <div class="card-content">
+                            <h3 style="color: var(--accent-blue);"><i class="fas fa-tools" style="margin-right: 10px;"></i> Araçlar</h3>
+                            <p>VS Code, Git, GitHub, Aseprite, Figma, Gauge, Appium</p>
+                        </div>
+                    </div>
+                    <div class="card pink no-hover" style="border-color: var(--accent-yellow);">
+                        <div class="card-content">
+                            <h3 style="color: var(--accent-yellow);"><i class="fas fa-language" style="margin-right: 10px;"></i> Diller</h3>
+                            <p>Türkçe (Anadil), İngilizce (İleri Seviye)</p>
                         </div>
                     </div>
                 </div>
@@ -191,6 +238,9 @@
                 <div style="margin-top: 3rem; display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
                     <a href="mailto:zzynpkrdgg@gmail.com" class="highlight" style="font-size: 1.2rem; font-weight: 700;">
                         <i class="fas fa-envelope" style="margin-right: 10px;"></i> zzynpkrdgg@gmail.com
+                    </a>
+                    <a href="https://github.com/zzynpkrdgg" target="_blank" class="highlight" style="font-size: 1.2rem; font-weight: 700; color: #ffffff;">
+                        <i class="fab fa-github" style="margin-right: 10px;"></i> GitHub
                     </a>
                     <a href="https://www.linkedin.com/in/zeynep-karada%C4%9F-705a37267/" target="_blank" class="highlight" style="font-size: 1.2rem; font-weight: 700; color: #0077b5;">
                         <i class="fab fa-linkedin" style="margin-right: 10px;"></i> LinkedIn
